@@ -1,0 +1,201 @@
+<html>
+  <!DOCTYPE html>
+<head>
+  <title>MW - About</title>
+  <style>
+    body {
+      background-color: #36899442;
+      margin: 0%;
+      font-family: sans-serif;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;         
+      padding: 15px 32px;      
+    }
+    .topbar {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      width: 97%;
+      padding: 12px 0;
+    }
+
+    /* Tab links */
+    .topbar a {
+      text-decoration: none;
+      padding: 8px 12px;
+      align-items: right;
+      justify-content: space-between;
+      border-radius: 10px;
+      color: #111;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      transition: background-color 0.15s ease, color 0.15s ease;
+    }
+
+    /* Highlight when you hover */
+    .topbar a:hover {
+      background: #f0f0f0;
+      transform:scale(0.8);
+    }
+
+    /* "Active" tab (current page) */
+    .topbar a.active {
+      background: #111;
+      color: #ffffff;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      margin-bottom: 10px;
+      margin-top: 20px;
+      background-color: rgba(55, 201, 157, 0.938);
+    }
+
+    .p1 {
+      text-align: center;
+      font-size: 20px;
+      margin-top: 0;
+      margin-bottom: 80px;
+    }
+
+    .about {
+      display: flex;
+      gap: 110px;               
+      align-items: flex-start;
+    }
+
+    .about-text {
+      flex: 4;
+      max-width: 65ch;
+      line-height: 1.6;
+    }
+
+    h2 {
+      margin: 0 0 10px 0;
+      font-size: 30px;
+      
+    }
+
+    .p2 {
+      font-size: 15px;
+      margin: 0;
+      line-height: 1.6;
+      max-width: 60ch;
+    }
+
+    .about-image {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .mattwag_image {
+      width: 400px;            
+      height: auto;
+      border: 2px solid #000;
+      display: block;
+      margin-bottom: 50px;
+    }
+
+    .resume-block {
+        width: 100%;
+        max-width: 900px;
+        display: flex;
+        flex-direction: column;
+    }
+    .resume_section {
+        width: 100%;
+        background: #000;
+        padding: 40px, 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .resume-title {
+        color: white;
+        font-size: 30px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+    .resume {
+      margin-top: 10px;
+      display: block;
+      width: 100%;
+      max-width: 900px;
+      height: 800px;
+      border: 10px solid #000;
+      background: #000;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 10px;
+      margin-top: 50px;
+      background-color: sandybrown;
+    }
+
+    h4 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 10px;
+      margin-top: 50px;
+    } 
+    
+    .divider{
+      margin: 0 2px;
+      color: #050101;
+      font-size: 30px;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <nav class="topbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="research.html">Research</a>
+    <a href="projects.html">Projects</a>
+    <a href="publications.html">Publications</a>
+    <a href="contact.html">Contact</a>
+    <a href="interests.html">Education</a>
+    <span class="divider">|</span>
+    <a href="https://www.linkedin.com/in/matthew-wagner-45300a290" target="_blank">
+      <img src="LinkedIn-Logo.wine.png" alt="linkedIn" width="80">
+    </a>
+  </nav>
+
+    <div class="container">
+
+        <h1>Matthew Wagner - Portfolio</h1>
+        
+        <p class="p1">Clinical Data Analytics & Healthcare Projects</p>
+        
+        
+
+        <div class="about">
+            <div class="about-text">
+            <h2>Who is Matthew Wagner?</h2>
+            <p class="p2">Matthew Wagner is an aspiring PharmD student at Ernest Mario School of Pharmacy in New Brunswick with his undergraduate in biochemistry from Montclair State University. Matthew has a strong interest in the intersection between clinical research and data analytics to drive healthcare innovation. Using data science, statistical visualization, chemical expertise, and knowledge from his pharmaceutical training  to extract meaningful insights that will create lasting impacts on public health and clinical drug research.</p>
+        </div>
+
+        <div class="about-image"> 
+                <img class="mattwag_image" src="Matthew_Wagner_Image.png" alt="Matthew Wagner">
+            </div>
+        </div>
+    </div>
+    <section class="resume_section">
+        <div class="resume-block">
+            <h4 class="resume-title">Resume (2026)</h4>
+            <iframe class="resume" src="MatthewWagner_Resume.pdf"></iframe>
+        </div>
+    </section>
+
+</body>
+</html>

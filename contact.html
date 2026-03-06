@@ -1,0 +1,178 @@
+<html>
+    <!DOCTYPE html>
+<head>
+    <title> MW - Contact</title>
+    <style>
+    body {
+      background-color: #36899442;
+      margin: 0%; 
+      font-family: sans-serif;
+    }
+      
+    .topbar {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      width: 97%;
+      padding: 12px 0;
+    }
+
+    /* Tab links */
+    .topbar a {
+      text-decoration: none;
+      padding: 8px 12px;
+      align-items: right;
+      justify-content: space-between;
+      border-radius: 10px;
+      color: #111;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      transition: background-color 0.15s ease, color 0.15s ease;
+    }
+
+    /* Highlight when you hover */
+    .topbar a:hover {
+      background: #f0f0f0;
+      transform:scale(0.8);
+      
+    }
+
+    .topbar a.active {
+      background: #111;
+      color: #ffffff;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      margin-bottom: 10px;
+      margin-top: 20px;
+      background-color: rgba(55, 201, 157, 0.938);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;         
+      padding: 15px 32px;      
+    }
+    .p1 {
+      text-align: center;
+      font-size: 20px;
+      margin-top: 0;
+    }
+    
+    .research_text {
+      text-align: center;
+      font-size: 20px;
+      margin-top: 50;
+      margin-bottom: 50px;
+      
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 30px auto;
+}
+
+    form label {
+        text-align: center;
+        display: block;
+        margin-top: 40px;
+        font-weight: bold;
+    }
+
+    form input,
+    form textarea {
+        text-align: center;
+        width: 100%;
+        margin-top: 6px;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-family: inherit;
+        font-size: 14px;
+    }
+
+    form textarea {
+        text-align: center;
+        min-height: 150px;
+        resize: vertical;
+    }
+
+    form button {
+        text-align: center;
+        margin-top: 15px;
+        padding: 10px 16px;
+        border: none;
+        background: black;
+        color: white;
+        border-radius: 8px;
+
+        cursor: pointer;
+    }
+
+    .center-image {
+      display:block;
+      margin: 0 auto;
+      transition: transform 0.2s;
+
+    }
+    .center-image:hover {
+      transform: scale(1.1);
+
+    }
+    .divider{
+      margin: 0 2px;
+      color: #050101;
+      font-size: 30px;
+    }
+    </style>
+</head>
+<body> 
+  <nav class="topbar">
+      <a href="index.html">Home</a>
+      <a href="research.html" >Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="contact.html"class="active" >Contact</a>
+      <a href="interests.html">Education</a>
+      <span class="divider">|</span>
+    <a href="https://www.linkedin.com/in/matthew-wagner-45300a290" target="_blank">
+      <img src="LinkedIn-Logo.wine.png" alt="linkedIn" width="80">
+    </a>
+  </nav> 
+    <div class="container">
+        <h1>Matthew Wagner - Portfolio</h1>
+        <p class="p1">Clinical Data Analytics & Healthcare Projects</p>
+      <div class="research">
+      <h2>Contact</h2>
+        <a href="https://www.linkedin.com/in/matthew-wagner-45300a290" target="_blank">
+          <img src="LinkedIn-Logo.wine.png" alt="linkedIn" width="200" class="center-image">
+        </a>
+      <p class="research_text">If you have any quetions, feel free to send a direct message to my email!</p>
+
+      <form action="https://formspree.io/f/mnjganna" method="POST">
+        <label>
+            Your email:
+            <input type="email" name="email" required>
+        </label>
+
+        <label>
+            Message:
+            <textarea name="message" rows="6" required></textarea>
+        </label>
+
+        <input type="hidden" name="_redirect" value="thank.html">
+
+        <button type="submit">Send</button>
+</form>
+      </div>
+</body>
+</html>

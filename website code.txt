@@ -1,0 +1,7 @@
+have it send back to webpage after filling contact form - 
+
+<input type="hidden" name="_redirect" value="https://YOURDOMAIN.com/thank.html"> swap this
+
+* add images that link to linkedin, maybe Montclair website, maybe science slam if i win, Rutgers pharmD, 
+
+* add linkedin tab to left side of screen on all (maybe) 
